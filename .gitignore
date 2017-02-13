@@ -1,0 +1,5 @@
+*.txt#
+*.tex~
+*.txt~
+*.aux
+*.log
