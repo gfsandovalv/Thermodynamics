@@ -1,0 +1,17 @@
+set terminal latex
+set output "R.tex"
+set xlabel "$\\ln{\\theta}$"
+set ylabel "$\\ln{R'}$"
+a=-1.16
+b=0.67
+f(x)=exp(((1-2*a*b)+sqrt(1-4*a*b*x))/(2*b*b*x)) 
+g(x)=exp(((1-2*a*b)-sqrt(1-4*a*b*x))/(2*b*b*x)) 
+set key bottom left
+set title ""
+set log xy
+set xrange [.5:10]
+set yrange [.5:10]
+plot f(x) t "Ra\\'iz positiva", g(x) t "Ra\\'iz negativa"
+
+
+

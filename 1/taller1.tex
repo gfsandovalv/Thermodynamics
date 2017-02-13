@@ -1,0 +1,82 @@
+\title{Termodin\'amica - M\'odulo de teor\'ia\\Taller 1}
+\author{
+Gabriel Sandoval \\ gfsandovalv@unal.edu.co
+   \and
+  Samuel Pozada\\ sgpozadab@unal.edu.co
+}
+\date{Febrero de 2017}
+\documentclass[12pt]{article}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{mathtools}
+\usepackage[figurename=]{caption}  
+\usepackage{subcaption}
+%\usepackage[section]{~/textmf/placeins.sty}
+\usepackage[a4paper,bindingoffset=0.2in,left=0.7in,right=0.7in,top=0.7in,bottom=0.7in,footskip=.25in]{geometry}
+\usepackage[utf8]{inputenc}  
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\begin{document}
+\maketitle
+
+\section{Ley cero}
+Cuando los sistemas A y C están en equilibrio, se cumple la relación
+\begin{equation}
+4\pi nRC_{c}H-MPV=0  
+\end{equation}
+Cuando B y C están en equilibrio se tiene,
+\begin{equation}
+nR\theta M'+4\pi RC'_{c}H'-M'PV=0
+\end{equation}
+\subsection{Temperatura empírica}
+\begin{center}
+  $T_A(H,M)=\dfrac{4\pi nRC_cH}{M}$; \\ 
+  $T_B(H',M')=nR(\theta+\dfrac{4\pi RC'_cH'}{M'})$;  \\
+  $T_C(P,V)=PV$
+\end{center}
+\paragraph{}
+Donde $n$, $R$, $C_c$, $C'_c $ y $\theta$ son constantes.
+\subsection{Isotermas}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.3\textwidth}
+    \scalebox{.4}{\input{/home/gabo/Documents/Thermodynamics_Workshops/1/A.tex}}
+    \caption{Sistema A}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.3\textwidth}
+    \scalebox{.4}{\input{/home/gabo/Documents/Thermodynamics_Workshops/1/B.tex}}
+    \caption{Sistema B}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.3\textwidth}
+    \scalebox{.4}{\input{/home/gabo/Documents/Thermodynamics_Workshops/1/C.tex}}
+    \caption{Sistema C}
+  \end{subfigure}
+  \caption{Algunas isotermas de cada sistema, tomando $n=R=C_c=C'_c=\theta =1$.}
+\end{figure}
+      
+\section{Variable termométrica}
+\begin{equation} \label{res}
+\sqrt{\dfrac{ln{R'}}{\theta}}=a+b \ln{R'}  
+\end{equation}
+Donde $a=-1.16$ y $b=0.675$
+\subsection{}
+\begin{center}
+  $\theta =\dfrac {\ln{R'}}{{(a+b \ln{R'})}^2}$\\
+  $\theta =\dfrac {\ln{1000}}{{(a+b \ln{1000})}^2}$
+\end{center}
+
+\subsection{}
+De la ecuación \eqref{res} se llega a lo sigueinte.\\
+\\$R'=\exp{\Big(\dfrac{(1-2ab\theta)\pm \sqrt{1-4ab\theta}}{2b^2\theta}\Big)}$
+\\ \\Donde $\exp(x)$ es la función exponencial $e^x$.
+\begin{figure}[H]
+  \centering
+  \scalebox{.9}{\input{/home/gabo/Documents/Thermodynamics_Workshops/1/R.tex}}
+  \caption{Gráfico Log-Log de $R'$ en función de $\theta$, para $1000 \Omega \leq R' \leq 30000 \Omega$}
+\end{figure}
+\section{}
+In this section we describe the results.
+\end{document}
+
