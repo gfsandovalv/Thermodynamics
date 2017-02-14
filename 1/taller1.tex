@@ -42,15 +42,15 @@ Donde $n$, $R$, $C_c$, $C'_c $ y $\theta$ son constantes.
 \begin{figure}[H]
   \centering
   \begin{subfigure}[b]{0.3\textwidth}
-    \scalebox{.4}{\input{/home/gabo/Documents/Thermodynamics_Workshops/1/A.tex}}
+    \scalebox{.4}{\input{A.tex}}
     \caption{Sistema A}
   \end{subfigure}
   \begin{subfigure}[b]{0.3\textwidth}
-    \scalebox{.4}{\input{/home/gabo/Documents/Thermodynamics_Workshops/1/B.tex}}
+    \scalebox{.4}{\input{B.tex}}
     \caption{Sistema B}
   \end{subfigure}
   \begin{subfigure}[b]{0.3\textwidth}
-    \scalebox{.4}{\input{/home/gabo/Documents/Thermodynamics_Workshops/1/C.tex}}
+    \scalebox{.4}{\input{C.tex}}
     \caption{Sistema C}
   \end{subfigure}
   \caption{Algunas isotermas de cada sistema, tomando $n=R=C_c=C'_c=\theta =1$.}
@@ -58,25 +58,35 @@ Donde $n$, $R$, $C_c$, $C'_c $ y $\theta$ son constantes.
       
 \section{Variable termométrica}
 \begin{equation} \label{res}
-\sqrt{\dfrac{ln{R'}}{\theta}}=a+b \ln{R'}  
+\sqrt{\dfrac{\log{R'}}{\theta}}=a+b \log{R'}  
 \end{equation}
 Donde $a=-1.16$ y $b=0.675$
 \subsection{}
 \begin{center}
-  $\theta =\dfrac {\ln{R'}}{{(a+b \ln{R'})}^2}$\\
-  $\theta =\dfrac {\ln{1000}}{{(a+b \ln{1000})}^2}$
+  $\theta =\dfrac {\log{R'}}{{(a+b \log{R'})}^2}$\\
+  $\theta =\dfrac {\log{1000}}{{(a+b\log{1000})}^2}=4,0095$
 \end{center}
 
 \subsection{}
 De la ecuación \eqref{res} se llega a lo sigueinte.\\
-\\$R'=\exp{\Big(\dfrac{(1-2ab\theta)\pm \sqrt{1-4ab\theta}}{2b^2\theta}\Big)}$
-\\ \\Donde $\exp(x)$ es la función exponencial $e^x$.
+\begin{center}
+  $R'=\exp_{10}{\Big(\dfrac{(1-2ab\theta)\pm \sqrt{1-4ab\theta}}{2b^2\theta}\Big)}$
+\end{center}
+Donde $\exp_{10}(x)$ es la función exponencial con base 10 ($10^x$).
 \begin{figure}[H]
   \centering
-  \scalebox{.9}{\input{/home/gabo/Documents/Thermodynamics_Workshops/1/R.tex}}
+  \scalebox{.9}{\input{R5.tex}}
   \caption{Gráfico Log-Log de $R'$ en función de $\theta$, para $1000 \Omega \leq R' \leq 30000 \Omega$}
 \end{figure}
 \section{}
-In this section we describe the results.
+La temperatura promedio de la atmósfera se aproxima mediante la relación\\
+\begin{center}
+  $T_{atm}=288.15-6.5z$
+\end{center}
+Donde $T_{atm}$ es la temperatura de la atmósfera medida en K, y Z es la altura en Km.
+La temperatura de un avión que viaja a 12,000m, viene dada por,
+\begin{center}
+  $T_{atm}=288.15-6.5(12)=210.15$
+\end{center}
 \end{document}
 
